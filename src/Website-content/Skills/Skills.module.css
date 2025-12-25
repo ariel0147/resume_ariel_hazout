@@ -1,0 +1,19 @@
+.skills {
+    margin-top: 65px;
+    text-align: right;
+    padding: 30px;
+}
+
+.skills h2 {
+    color: #00d0ff;
+    text-shadow: 0 0 15px #00d0ff;
+    border-bottom: 2px solid #00d0ff;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.skills ul {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-top: 15px;
+}

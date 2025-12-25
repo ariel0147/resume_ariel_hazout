@@ -1,0 +1,15 @@
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 3rem;
+    color: #00d0ff;
+    text-shadow:
+            0 0 10px #00d0ff,
+            0 0 20px #0091ff,
+            0 0 40px #0091ff;
+    padding-bottom: 6px;
+    display: inline-block;
+    border-bottom: 2px solid #00d0ff;
+}

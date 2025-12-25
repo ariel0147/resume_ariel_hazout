@@ -1,0 +1,23 @@
+.app_about {
+    margin-top: 65px;
+    padding: 30px;
+    text-align: right;
+}
+
+.text h3 {
+    color: #00d0ff;
+    text-shadow:
+            0 0 10px #00d0ff,
+            0 0 20px #0091ff,
+            0 0 40px #0091ff;
+    border-bottom: 2px solid #00d0ff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.text p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-top: 20px;
+    color: #e6f1ff;
+}

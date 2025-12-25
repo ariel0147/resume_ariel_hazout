@@ -1,0 +1,18 @@
+.info {
+    margin-top: 65px;
+    text-align: right;
+    padding: 30px;
+}
+
+.info h2 {
+    color: #00d0ff;
+    text-shadow: 0 0 15px #00d0ff;
+    border-bottom: 2px solid #00d0ff;
+    display: inline-block;
+}
+
+.info ul {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 2;
+}

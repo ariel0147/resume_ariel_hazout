@@ -1,0 +1,27 @@
+.navbar {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    backdrop-filter: blur(6px);
+}
+
+.links a {
+    margin: 0 20px;
+    font-size: 20px;
+    color: #00eaff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    text-shadow: 0 0 8px #00eaff;
+}
+
+.links a:hover {
+    color: white;
+    text-shadow: 0 0 12px #00eaff, 0 0 24px #00eaff;
+}
