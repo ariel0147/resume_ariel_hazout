@@ -9,8 +9,12 @@
     font-size: 2.5rem;
     margin-bottom: 50px;
     color: #00d0ff;
-    text-shadow: 0 0 15px rgba(0, 208, 255, 0.5);
+    text-shadow:
+            0 0 10px #00d0ff,
+            0 0 20px #0091ff,
+            0 0 40px #0091ff;
 }
+
 
 .grid {
     display: grid;
@@ -32,28 +36,23 @@
     align-items: center;
     justify-content: center;
 }
-
 .icon {
     font-size: 4rem;
     margin-bottom: 15px;
     color: #cccccc;
     transition: 0.3s;
 }
-
 .name {
     font-size: 1.2rem;
     margin: 0;
     color: #e0e0e0;
 }
-
-
 .card:hover {
     transform: translateY(-10px);
     background: rgba(255, 255, 255, 0.1);
     border-color: var(--hover-color);
     box-shadow: 0 0 20px var(--hover-color);
 }
-
 .card:hover .icon {
     color: var(--hover-color);
     transform: scale(1.1);

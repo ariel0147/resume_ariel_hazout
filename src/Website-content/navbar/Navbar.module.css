@@ -1,27 +1,102 @@
 .navbar {
-    width: 100%;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
     position: fixed;
     top: 0;
+    left: 0;
     right: 0;
-    display: flex;
-    justify-content: center;
-    z-index: 100;
-    backdrop-filter: blur(6px);
+    z-index: 1000;
+    border-bottom: 2px solid #00d0ff;
+    box-shadow: 0 0 15px rgba(0, 208, 255, 0.2);
 }
 
-.links a {
-    margin: 0 20px;
-    font-size: 20px;
-    color: #00eaff;
-    text-decoration: none;
+.logo a {
+    color: #00d0ff;
+    font-size: 1.8rem;
     font-weight: bold;
-    transition: 0.3s;
-    text-shadow: 0 0 8px #00eaff;
+    text-decoration: none;
+    text-shadow: 0 0 10px rgba(0, 208, 255, 0.5);
 }
 
-.links a:hover {
+.navLinks {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.navLinks a {
     color: white;
-    text-shadow: 0 0 12px #00eaff, 0 0 24px #00eaff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: 0.3s;
+    position: relative;
+}
+
+.navLinks a:hover {
+    color: #00d0ff;
+    text-shadow: 0 0 8px #00d0ff;
+}
+
+.contactBtn {
+    border: 1px solid #00d0ff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.contactBtn:hover {
+    background: #00d0ff;
+    color: black !important;
+}
+
+.hamburger {
+    display: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navLinks {
+
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s ease-in-out;
+        border-top: 1px solid #333;
+    }
+
+
+    .navLinks.active {
+        left: 0;
+    }
+
+    .navLinks a {
+        font-size: 2rem;
+        margin: 20px 0;
+    }
+
+    .contactBtn {
+        margin-top: 20px;
+        padding: 10px 40px;
+    }
 }

@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "./Skills.module.css";
 
-
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPhp, FaDatabase } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPhp, FaDatabase, FaBug } from "react-icons/fa";
 import { SiDotnet, SiCplusplus } from "react-icons/si";
 
 function Skills() {
@@ -15,6 +14,7 @@ function Skills() {
         { id: 6, name: "C++", icon: <SiCplusplus />, color: "#00599c" },
         { id: 7, name: "SQL", icon: <FaDatabase />, color: "#f29111" },
         { id: 8, name: "PHP", icon: <FaPhp />, color: "#777bb4" },
+        { id: 9, name: "QA / Testing", icon: <FaBug />, color: "#4caf50" },
     ];
 
     return (

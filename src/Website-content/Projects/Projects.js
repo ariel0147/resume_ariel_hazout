@@ -10,14 +10,14 @@ const projectsData = [
     },
     {
         id: 2,
-        title: "סימון",
+        title: "Simon",
         description: "משחק סימון בבניה עם ארדיאנו",
         link: "https://github.com/ariel0147/samin"
     }
     ,
     {
         id: 3,
-        title: "משחק הזיכרון",
+        title: "memory game",
         description: "משחק זיכרון סיגנון חיות",
         link: "https://github.com/ariel0147/memory_game"
     }

@@ -1,6 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Website-content/navbar/Navbar";
 import Home from "./Website-content/home/Home";
 import AppAbout from "./Website-content/about/app_about/app_about";
@@ -11,7 +10,7 @@ import Contact from "./Website-content/Contact/Contact";
 
 function App() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <div className="App">
                 <Navbar />
 
@@ -24,7 +23,7 @@ function App() {
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
             </div>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
