@@ -1,0 +1,61 @@
+.contactContainer {
+    margin-top: 60px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    min-height: 80vh;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #00d0ff;
+    text-shadow: 0 0 10px rgba(0, 208, 255, 0.7);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #e0e0e0;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid #00d0ff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 220px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 208, 255, 0.2);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #00d0ff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #ccc;
+    margin: 0;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.05);
+    background: rgba(0, 208, 255, 0.1);
+    box-shadow:
+            0 0 20px #00d0ff,
+            0 0 40px rgba(0, 136, 255, 0.6);
+}

@@ -11,6 +11,7 @@ function Navbar() {
                 <Link to="/skills">שפות תכנות</Link>
                 <Link to="/projects">פרויקטים</Link>
                 <Link to="/info">מידע אישי</Link>
+                <Link to="/contact">צור קשר</Link>
             </div>
         </nav>
     );

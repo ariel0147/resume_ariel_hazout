@@ -1,5 +1,7 @@
 .title {
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .title h1 {
@@ -11,5 +13,5 @@
             0 0 40px #0091ff;
     padding-bottom: 6px;
     display: inline-block;
-    border-bottom: 2px solid #00d0ff;
+    border-bottom: none;
 }
