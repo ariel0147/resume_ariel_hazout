@@ -6,6 +6,7 @@ import Home from "./Website-content/home/Home";
 import App_about from "./Website-content/about/app_about/app_about";
 import Skills from "./Website-content/Skills/Skills";
 import Info from "./Website-content/Info/Info";
+import Projects from "./Website-content/Projects/Projects";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                     <Route path="/about" element={<App_about />} />
                     <Route path="/skills" element={<Skills />} />
                     <Route path="/info" element={<Info />} />
+                    <Route path="/projects" element={<Projects />} />
                 </Routes>
             </div>
         </BrowserRouter>
