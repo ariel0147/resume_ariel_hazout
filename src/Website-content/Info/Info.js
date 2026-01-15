@@ -8,7 +8,7 @@ function Info() {
             <ul>
                 <li><strong>שם:</strong> אריאל חזוט</li>
                 <li><strong>גיל:</strong> 24</li>
-                <li><strong>מגורים:</strong>טבריה</li>
+                <li><strong>מגורים:</strong> טבריה </li>
             </ul>
 
             <h2>ניסיון תעסוקתי</h2>

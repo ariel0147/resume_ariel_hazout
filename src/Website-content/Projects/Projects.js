@@ -20,6 +20,18 @@ const projectsData = [
         title: "memory game",
         description: "משחק זיכרון סיגנון חיות",
         link: "https://github.com/ariel0147/memory_game"
+    },
+    {
+        id: 4,
+        title: "Todo List",
+        description: "אפליקציה לניהול משימות המאפשרת הוספה, מחיקה, סינון וניהול מעקב אחר מטלות יומיומיות.",
+        link: "https://github.com/ariel0147/todo_list_2"
+    },
+    {
+        id: 5,
+        title: "Project Management",
+        description: "אפליקציה לניהול פרויקטים,הוספה,מחיקה,עריכה,מערך הצבעות",
+        link: "https://github.com/ariel0147/finel_projct"
     }
 
 ];
