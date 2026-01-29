@@ -79,3 +79,11 @@
     color: #050c1d;
     box-shadow: 0 0 20px #00d0ff;
 }
+
+.buttonsContainer {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}

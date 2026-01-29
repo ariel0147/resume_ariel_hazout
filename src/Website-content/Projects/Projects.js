@@ -6,7 +6,7 @@ const projectsData = [
         id: 1,
         title: "Journey worlds 3",
         description: "משחק בסיגנון מריו וטירריה הרעיון המשחק למצוא ארבע מפתחות ולהגיע לתיבת האוצר ",
-        link: "https://github.com/ariel0147/game_666" // קישור לקוד או לאתר החי
+        link: "https://github.com/ariel0147/game_666"
     },
     {
         id: 2,
@@ -19,7 +19,8 @@ const projectsData = [
         id: 3,
         title: "memory game",
         description: "משחק זיכרון סיגנון חיות",
-        link: "https://github.com/ariel0147/memory_game"
+        link: "https://github.com/ariel0147/memory_game",
+        liveLink: "https://ariel0147.github.io/memory_game/"
     },
     {
         id: 4,
@@ -41,14 +42,19 @@ function Projects(props) {
         <div className={styles.Project}>
             <h2>הפרויקטים שלי</h2>
 
-
             <div className={styles.projectsContainer}>
 
                 {projectsData.map((project) => (
                     <div key={project.id} className={styles.projectCard}>
                         <h3>{project.title}</h3>
                         <p>{project.description}</p>
-                        <a href={project.link} target="_blank" rel="noopener noreferrer">צפה בפרויקט</a>
+                        <div className={styles.buttonsContainer}>
+                            <a href={project.link} target="_blank" rel="noopener noreferrer">צפה בפרויקט</a>
+
+                            {project.liveLink && (
+                                <a href={project.liveLink} target="_blank" rel="noopener noreferrer">שחק עכשיו</a>
+                            )}
+                        </div>
                     </div>
                 ))}
             </div>
