@@ -1,5 +1,4 @@
 .navbar {
-    background-color: rgba(0, 0, 0, 0.9);
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -12,6 +11,9 @@
     z-index: 1000;
     border-bottom: 2px solid #00d0ff;
     box-shadow: 0 0 15px rgba(0, 208, 255, 0.2);
+    background-color: rgba(5, 12, 29, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .logo a {

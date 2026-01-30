@@ -6,4 +6,27 @@
   color: #e6f1ff;
   font-family: "Segoe UI", Arial, sans-serif;
   direction: rtl;
+  background: radial-gradient(circle at 50% 50%, #0a192f 0%, #050c1d 100%);
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+.App::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 300px;
+  height: 300px;
+  background: rgba(0, 208, 255, 0.1);
+  filter: blur(80px);
+  border-radius: 50%;
+  z-index: 0;
+  animation: float 10s infinite alternate;
+}
+
+@keyframes float {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(50px, 50px); }
 }
