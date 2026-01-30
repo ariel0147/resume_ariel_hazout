@@ -1,9 +1,11 @@
 .infoContainer {
     padding: 2rem;
+    padding-top: 100px;
     max-width: 1200px;
     margin: 0 auto;
     color: #fff;
     direction: ltr;
+    min-height: 100vh;
 }
 
 .mainTitle {
@@ -85,6 +87,7 @@
 @media (max-width: 768px) {
     .infoContainer {
         padding: 1rem;
+        padding-top: 100px;
     }
 
     .mainTitle {
