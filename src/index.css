@@ -4,8 +4,21 @@ body {
   font-family: 'Heebo', sans-serif;
   -webkit-font-smoothing: antialiased;
   background-color: #050c1d;
+  transition: direction 0.3s ease;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.center-text {
+  text-align: center;
+}
+
+p, li, span, a {
+  text-align: start;
+}
+
+/* כותרות יקבלו יישור רק אם לא הוגדר להן אחרת */
+h1, h2, h3, h4, h5, h6 {
+  /* מחקנו את text-align מכאן כדי לא לדרוס את המרכוז */
 }

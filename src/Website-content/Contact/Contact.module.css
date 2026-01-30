@@ -1,9 +1,9 @@
 .contactContainer {
-    margin-top: 60px;
-    padding: 20px;
+    padding: 5rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
     text-align: center;
-    color: white;
-    min-height: 80vh;
+    color: #fff;
 }
 
 .title {
@@ -14,52 +14,62 @@
             0 0 10px #00d0ff,
             0 0 20px #0091ff,
             0 0 40px #0091ff;
+    text-align: center !important;
 }
 
-
 .subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 4rem;
     color: #e0e0e0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center !important;
 }
 
 .links {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 3rem;
     flex-wrap: wrap;
 }
 
-
 .card {
-    background: rgba(0, 0, 0, 0.6);
-    border: 2px solid #00d0ff;
-    border-radius: 15px;
-    padding: 30px;
-    width: 220px;
+
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    min-width: 280px;
+
     text-decoration: none;
-    color: white;
     transition: all 0.3s ease;
-    box-shadow: 0 0 10px rgba(0, 208, 255, 0.2);
-}
-
-.card h3 {
-    margin-top: 0;
-    color: #00d0ff;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.card p {
-    font-size: 1rem;
-    color: #ccc;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .card:hover {
-    transform: translateY(-5px) scale(1.05);
-    background: rgba(0, 208, 255, 0.1);
-    box-shadow:
-            0 0 20px #00d0ff,
-            0 0 40px rgba(0, 136, 255, 0.6);
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #61dafb;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #61dafb;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 1.3rem;
+    color: #fff;
+    margin: 0;
+    font-weight: 500;
 }

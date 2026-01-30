@@ -1,10 +1,13 @@
 import React from "react";
 import styles from "./Skills.module.css";
+import { useTranslation } from 'react-i18next';
 
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPhp, FaDatabase, FaBug } from "react-icons/fa";
 import { SiDotnet, SiCplusplus } from "react-icons/si";
 
 function Skills() {
+    const { t } = useTranslation();
+
     const skills = [
         { id: 1, name: "C# / .NET", icon: <SiDotnet />, color: "#512BD4" },
         { id: 2, name: "JavaScript", icon: <FaJs />, color: "#f7df1e" },
@@ -19,7 +22,8 @@ function Skills() {
 
     return (
         <div className={styles.skillsContainer}>
-            <h2 className={styles.title}>שפות תכנות וטכנולוגיות</h2>
+
+            <h2 className={styles.title}>{t('skills.title')}</h2>
 
             <div className={styles.grid}>
                 {skills.map((skill) => (

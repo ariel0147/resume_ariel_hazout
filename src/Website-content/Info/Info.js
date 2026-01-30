@@ -1,54 +1,57 @@
-import React from "react";
+import React from 'react';
 import styles from "./Info.module.css";
+import { useTranslation } from 'react-i18next';
+import { FaUser, FaGraduationCap, FaBriefcase, FaMedal } from 'react-icons/fa';
 
 function Info() {
+    const { t } = useTranslation();
+
     return (
-        <div className={styles.info}>
-            <h2>מידע אישי</h2>
-            <ul>
-                <li><strong>שם:</strong> אריאל חזוט</li>
-                <li><strong>גיל:</strong> 24</li>
-                <li><strong>מגורים:</strong> טבריה </li>
-            </ul>
+        <div className={styles.infoContainer}>
+            <h2 className={styles.mainTitle}>{t('info.title')}</h2>
 
-            <h2>ניסיון תעסוקתי</h2>
-            <ul>
-                <li>
-                    <strong>מסעדת "אל רנצו" (5 שנים):</strong>
-                    <br/>
-                    עבודה בצוות תחת לחץ גבוה, אחריות תפעולית, התקדמות והתמקצעות בתחנות שונות במטבח.
-                </li>
-                <li>
-                    <strong>מוסך הגליל (שנה):</strong>
-                    <br/>
-                    עבודה טכנית מדויקת, מתן שירות לקוחות ועמידה בלוחות זמנים.
-                </li>
-                <li>
-                    <strong>ממן שיווק (8 חודשים):</strong>
-                    <br/>
-                    ניהול מלאי, סדר וארגון, עבודה מול ספקים ולקוחות.
-                </li>
-                <li>
-                    <strong>החברה הכלכלית (נוכחי):</strong>
-                    <br/>
-                    אחזקה כללית – פתרון בעיות בזמן אמת, "הגדלת ראש" ואחריות אישית בשטח.
-                </li>
-            </ul>
+            <div className={styles.gridContainer}>
 
-            <h2>שירות צבאי</h2>
-            <ul>
-            <li>
-                שירות מלא בבסיס הושעיה (בינוי). התפקיד כלל אחריות על תחזוקה ושיפוצים, עבודה עצמאית וניהול פרויקטים בתחום הבינוי.
-            </li>
-             </ul>
-            <h2>השכלה והכשרות</h2>
-            <ul>
-                <li>
-                    <strong>סטודנט להנדסת תוכנה במכללת כנרת.</strong>
-                </li>
-                <li>12 שנות לימוד ובגרות מלאה.</li>
-                <li>רכז בניה קלה (הסמכה צבאית).</li>
-            </ul>
+                <div className={styles.card}>
+                    <div className={styles.iconWrapper}><FaUser /></div>
+                    <h3>{t('info.personal_details')}</h3>
+                    <ul>
+                        <li><strong>{t('info.name_label')}</strong> {t('home.name')}</li>
+                        <li><strong>{t('info.age_label')}</strong> 24</li>
+                        <li><strong>{t('info.address_label')}</strong> {t('info.address_val')}</li>
+                    </ul>
+                </div>
+
+
+                <div className={styles.card}>
+                    <div className={styles.iconWrapper}><FaGraduationCap /></div>
+                    <h3>{t('info.education_title')}</h3>
+                    <ul>
+                        <li>{t('info.edu_1')}</li>
+                        <li>{t('info.edu_2')}</li>
+                        <li>{t('info.edu_3')}</li>
+                    </ul>
+                </div>
+
+
+                <div className={styles.card}>
+                    <div className={styles.iconWrapper}><FaMedal /></div>
+                    <h3>{t('info.military_title')}</h3>
+                    <p>{t('info.military_desc')}</p>
+                </div>
+
+
+                <div className={styles.card}>
+                    <div className={styles.iconWrapper}><FaBriefcase /></div>
+                    <h3>{t('info.employment_title')}</h3>
+                    <ul>
+                        <li>{t('info.job_current')}</li>
+                        <li>{t('info.job_maman')}</li>
+                        <li>{t('info.job_garage')}</li>
+                        <li>{t('info.job_restaurant')}</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     );
 }

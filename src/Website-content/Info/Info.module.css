@@ -1,44 +1,93 @@
-.info {
-    margin-top: 60px;
-    padding: 40px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: right;
-    color: white;
+.infoContainer {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+    direction: ltr;
 }
 
-.info h2 {
-    font-size: 2rem;
+.mainTitle {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
     color: #00d0ff;
-    margin-top: 40px;
-    margin-bottom: 20px;
     text-shadow:
             0 0 10px #00d0ff,
             0 0 20px #0091ff,
             0 0 40px #0091ff;
+    text-align: center !important;
 }
 
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
 
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
 
-.info ul {
-    list-style-type: none;
+.iconWrapper {
+    font-size: 2.5rem;
+    color: #61dafb;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #61dafb;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    text-align: center !important;
+}
+
+.card ul {
+    list-style: none;
     padding: 0;
-    background: rgba(0, 0, 0, 0.3);
-    border-right: 3px solid #00d0ff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 208, 255, 0.1);
+    width: 100%;
+    text-align: start;
 }
 
-.info li {
-    font-size: 1.1rem;
-    line-height: 2.2;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    margin-bottom: 10px;
+.card p {
+    width: 100%;
+    text-align: center;
 }
 
-.info li:last-child {
+.card li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 0.5rem;
+}
+
+.card li:last-child {
     border-bottom: none;
+}
+
+
+@media (max-width: 768px) {
+    .infoContainer {
+        padding: 1rem;
+    }
+
+    .mainTitle {
+        font-size: 2rem;
+    }
 }

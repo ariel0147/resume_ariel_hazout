@@ -1,13 +1,16 @@
 import React from 'react';
 import styles from "./Contact.module.css";
+import { useTranslation } from 'react-i18next';
 
 function Contact() {
+    const { t } = useTranslation();
+
     return (
         <div className={styles.contactContainer}>
 
-            <h2 className={styles.title}>צור קשר</h2>
+            <h2 className={styles.title}>{t('contact.title')}</h2>
 
-            <p className={styles.subtitle}>אשמח לשמוע מכם! מוזמנים ליצור איתי קשר בדרכים הבאות:</p>
+            <p className={styles.subtitle}>{t('contact.subtitle')}</p>
 
             <div className={styles.links}>
                 <a href="https://wa.me/972556654410" target="_blank" rel="noopener noreferrer" className={styles.card}>
