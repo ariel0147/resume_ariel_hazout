@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./profile.module.css";
-import arielImg from "./ariel.jpg";
+import arielImg from "./ariel.jpg.jpeg";
 
 function Profile() {
     return (

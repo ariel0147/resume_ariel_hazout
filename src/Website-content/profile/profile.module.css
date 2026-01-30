@@ -1,23 +1,40 @@
 .profile {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    align-items: center;
+    margin-top: 70px; /* קצת יותר מרווח מלמעלה */
+    padding: 20px;
 }
 
 .img {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
+    /* הגדלנו מעט את הגודל הפיזי */
+    width: 240px;
+    height: 240px;
+
+    /* השינוי המשמעותי - לא עיגול מלא, אלא ריבוע מעוגל מודרני */
+    /* זה חושף יותר שטח מהתמונה */
+    border-radius: 40px;
+
     object-fit: cover;
-    border: 3px solid #00d0ff;
-    box-shadow: 0 0 15px #00d0ff, 0 0 30px #0088ff;
-    transition: 0.3s ease;
+    /* משאירים את המיקוד על החלק העליון של הפנים */
+    object-position: center top;
+
+    /* עיצוב מתוחכם: מסגרת לבנה עבה שיוצרת הפרדה */
+    border: 6px solid #ffffff;
+
+    /* צל רך ומקצועי, פחות "ניאון" ויותר "עומק" */
+    box-shadow:
+            0 10px 30px -10px rgba(0, 0, 0, 0.3), /* צל כהה ליצירת ריחוף */
+            0 0 20px -5px rgba(0, 162, 255, 0.4); /* הילה כחולה עדינה מאוד מסביב */
+
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .img:hover {
-    transform: scale(1.07);
+    /* אפקט ריחוף אלגנטי */
+    transform: translateY(-8px) scale(1.02);
+    /* חיזוק עדין של הצל בהובר */
     box-shadow:
-            0 0 20px #4be9ff,
-            0 0 40px #00d0ff,
-            0 0 60px #0088ff;
+            0 20px 40px -10px rgba(0, 0, 0, 0.4),
+            0 0 30px -5px rgba(0, 162, 255, 0.6);
 }
