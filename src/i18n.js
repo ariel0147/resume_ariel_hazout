@@ -59,13 +59,13 @@ const resources = {
                 edu_3: "Military Certification: Light Construction Coordinator",
 
                 military_title: "Military Service",
-                military_desc: "Full service at Hoshaya Base (Construction/Maintenance).",
+                military_desc: "Full and significant service in the Construction Department at Hoshaya Base. The role included infrastructure management, responsibility for light construction projects, working under tight schedules, and solving complex technical issues in the field.",
 
                 employment_title: "Employment History",
-                job_current: "General Maintenance - The Economic Company (Current)",
-                job_maman: "Driver & Assistant - Maman Marketing (8 Months)",
-                job_garage: "Mechanic - Galil Garage (1 Year)",
-                job_restaurant: "Shift Manager - El Rancho (5 Years)",
+                job_current: "General Maintenance - The Economic Company: Managing and repairing defects, multidisciplinary technical work, and facility maintenance.",
+                job_maman: "Maman Marketing (8 Months): Dynamic role combining warehouse inventory management and cashier duties, maintaining high standards of organization and customer service.",
+                job_garage: "Galil Garage (1 Year): Auto mechanic, performing precise technical work requiring high diagnostic skills and teamwork.",
+                job_restaurant: "El Rancho Restaurant (5 Years): Extensive experience in various roles - from dishwasher and waiter to professional grill chef and cook, concluding as a Shift Manager responsible for overall operations.",
             }
         },
     },
@@ -108,7 +108,7 @@ const resources = {
                 btn_play: "שחק עכשיו",
                 p1_desc: "משחק פלטפורמה הרפתקני בסגנון רטרו המשלב השראות ממריו וטרריה. השחקן נדרש לחקור עולמות, לאסוף ארבעה מפתחות עתיקים ולפתוח את תיבת האוצר האגדית.",
                 p2_desc: "גרסה פיזית ואינטראקטיבית למשחק הזיכרון הקלאסי 'סיימון', המבוססת על בקר Arduino. הפרויקט משלב תכנות חומרה (Embedded) עם בניית מעגלים אלקטרוניים.",
-                p3_desc: "משחק זיכרון קלאסי וצבעוני בנושא בעלי חיים. פותח בדגש על לוגיקת משחק, עיצוב רספונסיבי וחוויית משתמש מהנה לכל הגילאים.",
+                p3_desc: "משחק זיכרון קלאסי וצבעוני בנושא בעלי חיים. פותח בדגש על לוגיקת משחק, עיצוב רספונסיבי וחוויית משתמש מהמהנה לכל הגילאים.",
                 p4_desc: "מערכת חכמה לניהול משימות יומיומיות. האפליקציה מאפשרת מעקב יעיל, סינון לפי סטטוס ביצוע, עריכה דינמית וממשק משתמש נקי ונוח.",
                 p5_desc: "פלטפורמה מקיפה לניהול פרויקטים וצוותים. כוללת פיצ'רים של יצירת פרויקטים, מעקב סטטוסים, ומערכת הצבעות דמוקרטית לקבלת החלטות.",
             },
@@ -126,13 +126,13 @@ const resources = {
                 edu_3: "תעודת מקצוע צבאית: רכז בניה קלה",
 
                 military_title: "שירות צבאי",
-                military_desc: "שירות מלא בבסיס הושעיה (בינוי).",
+                military_desc: "שירות צבאי מלא ומשמעותי במערך הבינוי של בסיס הושעיה. התפקיד כלל ניהול ותחזוקת תשתיות, אחריות על פרויקטים של בניה קלה, עבודה תחת לוחות זמנים צפופים ופתרון בעיות טכניות מורכבות בשטח.",
 
                 employment_title: "ניסיון תעסוקתי",
-                job_current: "אחזקה כללית - החברה הכלכלית (נוכחי)",
-                job_maman: "נהג ועוזר נהג - ממן שיווק (8 חודשים)",
-                job_garage: "מכונאי - מוסך הגליל (שנה)",
-                job_restaurant: "אחמ״ש - מסעדת אל רנצו (5 שנים)",
+                job_current: "אחזקה כללית - החברה הכלכלית: ניהול ותיקון ליקויים, עבודה טכנית רב-תחומית ואחריות על תקינות מבנים.",
+                job_maman: "ממן שיווק (8 חודשים): עבודה דינמית המשלבת ניהול מלאי כמחסנאי, שירות לקוחות ועבודה על קופה, תוך הקפדה על סדר וארגון.",
+                job_garage: "מוסך הגליל (שנה): מכונאי רכב, עבודה טכנית מדויקת הדורשת יכולת אבחון גבוהה ועבודת צוות.",
+                job_restaurant: "מסעדת אל רנצו (5 שנים): ניסיון רב במגוון תפקידים - החל משטיפת כלים ומלצרות ועד לעבודה מקצועית כטבח וגרילמן, וסיום כראש משמרת (אחמ״ש) האחראי על תפעול המסעדה.",
             }
         },
     },

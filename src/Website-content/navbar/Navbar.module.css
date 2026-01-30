@@ -31,8 +31,6 @@
     display: flex;
     gap: 30px;
     align-items: center;
-
-
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -72,25 +70,49 @@
 }
 
 
+.langBtn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.3s;
+}
+
+.langBtn:hover {
+    color: #00d0ff;
+}
+
 @media (max-width: 768px) {
     .navbar {
         padding: 0 20px;
     }
 
 
+    .langBtn {
+        position: absolute;
+        left: 20px;
+        margin-left: 0 !important;
+        z-index: 1001;
+    }
+
     .logo {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+        font-size: 1.4rem;
     }
-
 
     .hamburger {
         display: block;
         position: absolute;
         right: 20px;
+        z-index: 1001;
     }
-
 
     .navLinks {
         position: fixed;
