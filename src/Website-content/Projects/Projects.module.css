@@ -16,7 +16,6 @@
     display: inline-block;
 }
 
-
 .projectsContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -84,8 +83,7 @@
     color: #ffffff;
 }
 
-
-.projectCard a {
+.projectCard a, .videoButton {
     display: inline-block;
     padding: 10px 25px;
     border: 2px solid #00d0ff;
@@ -96,9 +94,12 @@
     transition: all 0.3s ease;
     background: transparent;
     box-shadow: 0 0 5px #00d0ff;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
 }
 
-.projectCard a:hover {
+.projectCard a:hover, .videoButton:hover {
     background: #00d0ff;
     color: #050c1d;
     box-shadow: 0 0 20px #00d0ff;
@@ -110,4 +111,78 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    backdrop-filter: blur(8px);
+    animation: fadeIn 0.3s ease-in-out;
+    padding: 20px;
+}
+
+.modalContent {
+    position: relative;
+    max-width: 1000px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    outline: none;
+}
+
+.videoPlayer {
+    max-height: 80vh;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+
+    border-radius: 12px;
+    box-shadow: 0 0 40px rgba(0, 208, 255, 0.3);
+    border: 2px solid #00d0ff;
+    background: black;
+    object-fit: contain;
+}
+
+.closeButton {
+    position: absolute;
+    top: -50px;
+    right: 0;
+
+    background: rgba(10, 25, 47, 0.9);
+    border: 2px solid #00d0ff;
+    color: #00d0ff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 2001;
+    box-shadow: 0 0 10px rgba(0, 208, 255, 0.3);
+}
+
+.closeButton:hover {
+    background: #00d0ff;
+    color: #0a192f;
+    box-shadow: 0 0 20px #00d0ff;
+    transform: rotate(90deg);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
