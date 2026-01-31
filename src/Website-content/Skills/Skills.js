@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Skills.module.css";
 import { useTranslation } from 'react-i18next';
+import { motion } from "framer-motion";
 
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPhp, FaDatabase, FaBug } from "react-icons/fa";
 import { SiDotnet, SiCplusplus } from "react-icons/si";
@@ -26,15 +27,20 @@ function Skills() {
             <h2 className={styles.title}>{t('skills.title')}</h2>
 
             <div className={styles.grid}>
-                {skills.map((skill) => (
-                    <div
+                {skills.map((skill, index) => (
+                    <motion.div
                         key={skill.id}
                         className={styles.card}
                         style={{ '--hover-color': skill.color }}
+
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: index * 0.1 }}
                     >
                         <div className={styles.icon}>{skill.icon}</div>
                         <h3 className={styles.name}>{skill.name}</h3>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
         </div>

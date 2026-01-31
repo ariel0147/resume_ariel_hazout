@@ -3,6 +3,7 @@ import styles from "./Projects.module.css";
 import { FaHtml5, FaCss3, FaJs, FaNodeJs, FaTimes } from 'react-icons/fa';
 import { SiArduino, SiCplusplus } from 'react-icons/si';
 import { useTranslation } from 'react-i18next';
+import { motion } from "framer-motion";
 
 import simonVideo from './simun.mp4';
 import game666Video from './game666.mp4';
@@ -10,7 +11,6 @@ import game666Video from './game666.mp4';
 function Projects(props) {
     const { t } = useTranslation();
     const [selectedVideo, setSelectedVideo] = useState(null);
-
 
     const projectsData = [
         {
@@ -74,8 +74,15 @@ function Projects(props) {
             <h2>{t('projects.title')}</h2>
 
             <div className={styles.projectsContainer}>
-                {projectsData.map((project) => (
-                    <div key={project.id} className={styles.projectCard}>
+                {projectsData.map((project, index) => (
+                    <motion.div
+                        key={project.id}
+                        className={styles.projectCard}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay: index * 0.2 }}
+                    >
                         <h3>{project.title}</h3>
                         <p>{project.description}</p>
 
@@ -103,7 +110,7 @@ function Projects(props) {
                                 <a href={project.liveLink} target="_blank" rel="noopener noreferrer">{t('projects.btn_play')}</a>
                             )}
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
 
