@@ -51,7 +51,23 @@ function Projects(props) {
             description: t('projects.p5_desc'),
             link: "https://github.com/ariel0147/finel_projct",
             techIcons: [<FaNodeJs />, <FaJs />, <FaHtml5 />, <FaCss3 />]
+        },
+        {
+            id: 6,
+            title: "Bulk Game (Word Search)",
+            description: t('projects.p6_desc'),
+            link: "https://github.com/ariel0147/Bulk_game",
+            liveLink: "https://ariel0147.github.io/Bulk_game/Bulk_game.html",
+            techIcons: [<FaJs />, <FaHtml5 />, <FaCss3 />]
+        },
+        {
+            id: 7,
+            title: "Puzzli",
+            description: t('projects.p7_desc'),
+            link: "https://github.com/ariel0147/Puzzli",
+            techIcons: [<FaJs />, <FaHtml5 />, <FaCss3 />]
         }
+
     ];
 
     const openModal = (project) => {
