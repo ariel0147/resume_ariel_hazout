@@ -46,7 +46,7 @@ const resources = {
                 p5_desc: "A comprehensive platform for project and team management. Includes features for creating projects, tracking status, and a democratic voting system for decision making.",
                 p6_desc: "A fun and classic word search puzzle game.",
                 p7_desc: "An interactive puzzle game that allows users to upload a custom image, which is then automatically sliced into playable puzzle pieces for assembly.",
-                p8_desc: "A web application for tracking and managing cryptocurrencies. Features real-time data and a clean, user-friendly interface."
+                p8_desc: "An advanced web application for smart financial management. The system displays real-time bank account data, allows direct import of transactions from the bank, and includes dynamic tools for setting goals and managing budgets. Additionally, it features a unique smart-scanning tool for analyzing payslips."
             },
             info: {
                 title: "Personal Information",
@@ -116,7 +116,7 @@ const resources = {
                 p5_desc: "פלטפורמה מקיפה לניהול פרויקטים וצוותים. כוללת פיצ'רים של יצירת פרויקטים, מעקב סטטוסים, ומערכת הצבעות דמוקרטית לקבלת החלטות.",
                 p6_desc: "משחק תפזורת קלאסי ומהנה לחיפוש מילים.",
                 p7_desc: "משחק פאזל אינטראקטיבי המאפשר למשתמש להעלות תמונה אישית, אשר נחתכת אוטומטית לחלקי פאזל להרכבה.",
-                p8_desc: "אפליקציית ווב למעקב וניהול מטבעות וירטואליים (קריפטו). מציגה נתונים בזמן אמת עם ממשק משתמש נקי ונוח."
+                p8_desc: "אפליקציית ווב מתקדמת לניהול פיננסי חכם. המערכת מציגה נתוני עו״ש עדכניים בזמן אמת, מאפשרת יבוא תנועות ישירות מהבנק, וכוללת כלים להגדרת יעדים וניהול תקציבים. בנוסף, האפליקציה מציעה פיצ'ר ייחודי לסריקה חכמה וניתוח של תלושי שכר."
             },
             info: {
                 title: "מידע אישי",
