@@ -45,7 +45,8 @@ const resources = {
                 p4_desc: "A smart system for managing daily tasks. The app allows efficient tracking, filtering by status, dynamic editing, and a clean, user-friendly interface.",
                 p5_desc: "A comprehensive platform for project and team management. Includes features for creating projects, tracking status, and a democratic voting system for decision making.",
                 p6_desc: "A fun and classic word search puzzle game.",
-                p7_desc: "An interactive puzzle game that allows users to upload a custom image, which is then automatically sliced into playable puzzle pieces for assembly."
+                p7_desc: "An interactive puzzle game that allows users to upload a custom image, which is then automatically sliced into playable puzzle pieces for assembly.",
+                p8_desc: "A web application for tracking and managing cryptocurrencies. Features real-time data and a clean, user-friendly interface."
             },
             info: {
                 title: "Personal Information",
@@ -114,7 +115,8 @@ const resources = {
                 p4_desc: "מערכת חכמה לניהול משימות יומיומיות. האפליקציה מאפשרת מעקב יעיל, סינון לפי סטטוס ביצוע, עריכה דינמית וממשק משתמש נקי ונוח.",
                 p5_desc: "פלטפורמה מקיפה לניהול פרויקטים וצוותים. כוללת פיצ'רים של יצירת פרויקטים, מעקב סטטוסים, ומערכת הצבעות דמוקרטית לקבלת החלטות.",
                 p6_desc: "משחק תפזורת קלאסי ומהנה לחיפוש מילים.",
-                p7_desc: "משחק פאזל אינטראקטיבי המאפשר למשתמש להעלות תמונה אישית, אשר נחתכת אוטומטית לחלקי פאזל להרכבה."
+                p7_desc: "משחק פאזל אינטראקטיבי המאפשר למשתמש להעלות תמונה אישית, אשר נחתכת אוטומטית לחלקי פאזל להרכבה.",
+                p8_desc: "אפליקציית ווב למעקב וניהול מטבעות וירטואליים (קריפטו). מציגה נתונים בזמן אמת עם ממשק משתמש נקי ונוח."
             },
             info: {
                 title: "מידע אישי",

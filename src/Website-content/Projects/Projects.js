@@ -66,6 +66,13 @@ function Projects(props) {
             description: t('projects.p7_desc'),
             link: "https://github.com/ariel0147/Puzzli",
             techIcons: [<FaJs />, <FaHtml5 />, <FaCss3 />]
+        },
+        {
+            id: 8,
+            title: "ClearCoin",
+            description: t('projects.p8_desc'),
+            link: "https://github.com/ariel0147/ClearCoin",
+            techIcons: [<FaJs />, <FaHtml5 />, <FaCss3 />]
         }
 
     ];
