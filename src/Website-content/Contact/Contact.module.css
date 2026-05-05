@@ -73,3 +73,33 @@
     margin: 0;
     font-weight: 500;
 }
+
+@media (max-width: 768px) {
+    .contactContainer {
+        padding: 80px 15px 40px !important;
+    }
+
+    .title {
+        font-size: 2rem !important;
+        margin-bottom: 30px !important;
+    }
+
+    .subtitle {
+        font-size: 1.2rem !important;
+        margin-bottom: 2rem !important;
+        padding: 0 10px;
+    }
+
+    .links {
+        flex-direction: column !important;
+        align-items: center;
+        gap: 1.5rem !important;
+    }
+
+    .card {
+        width: 100% !important;
+        max-width: 320px;
+        min-width: unset !important;
+        padding: 2rem 1.5rem !important;
+    }
+}

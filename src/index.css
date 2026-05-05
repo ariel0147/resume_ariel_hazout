@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap');
-body {
+html, body {
   margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: clip;
+}
+
+body {
   font-family: 'Heebo', sans-serif;
   -webkit-font-smoothing: antialiased;
   background-color: #050c1d;
   transition: direction 0.3s ease;
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
