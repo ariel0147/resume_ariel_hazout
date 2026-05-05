@@ -1,14 +1,20 @@
-// src/components/AnimatedSection.js
+
+import React from 'react';
 import { motion } from 'framer-motion';
 
 const AnimatedSection = ({ id, children }) => {
     return (
         <motion.div
             id={id}
-            initial={{ opacity: 0, y: 50 }} // מתחיל שקוף וקצת למטה
-            whileInView={{ opacity: 1, y: 0 }} // כשנכנס למסך עולה ומופיע
-            viewport={{ once: true, amount: 0.2 }} // האנימציה תקרה פעם אחת כש-20% מהרכיב במסך
-            transition={{ duration: 0.8, ease: "easeOut" }} // משך האנימציה
+            className="section-wrapper"
+            initial={{ opacity: 0, y: 70, scale: 0.95 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{
+                duration: 0.8,
+                type: "spring",
+                bounce: 0.3
+            }}
         >
             {children}
         </motion.div>

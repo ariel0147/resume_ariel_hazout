@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "./Home.module.css";
 import Profile from "../profile/profile";
-import { Link } from "react-router-dom";
+import { Link } from 'react-scroll'; // הייבוא החדש והנכון
 import { useTranslation } from 'react-i18next';
 
 function Home() {
@@ -20,8 +20,28 @@ function Home() {
                 </p>
 
                 <div className={styles.buttons}>
-                    <Link to="/projects" className={styles.btnPrimary}>{t('home.btn_projects')}</Link>
-                    <Link to="/contact" className={styles.btnSecondary}>{t('home.btn_contact')}</Link>
+                    {/* השינוי כאן: הורדנו את הלוכסן והוספנו את הגלילה החלקה */}
+                    <Link
+                        to="projects"
+                        smooth={true}
+                        duration={600}
+                        offset={-70}
+                        className={styles.btnPrimary}
+                        style={{ cursor: 'pointer' }}
+                    >
+                        {t('home.btn_projects')}
+                    </Link>
+
+                    <Link
+                        to="contact"
+                        smooth={true}
+                        duration={600}
+                        offset={-70}
+                        className={styles.btnSecondary}
+                        style={{ cursor: 'pointer' }}
+                    >
+                        {t('home.btn_contact')}
+                    </Link>
                 </div>
             </div>
 

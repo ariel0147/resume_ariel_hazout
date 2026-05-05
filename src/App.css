@@ -30,3 +30,13 @@
   0% { transform: translate(0, 0); }
   100% { transform: translate(50px, 50px); }
 }
+
+
+.section-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 20px 40px;
+  box-sizing: border-box;
+}
