@@ -1,29 +1,36 @@
+import React from 'react';
 import './App.css';
-import { HashRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./Website-content/navbar/Navbar";
-import Home from "./Website-content/home/Home";
-import AppAbout from "./Website-content/about/app_about/app_about";
-import Skills from "./Website-content/Skills/Skills";
-import Info from "./Website-content/Info/Info";
-import Projects from "./Website-content/Projects/Projects";
-import Contact from "./Website-content/Contact/Contact";
+import Navbar from './components/Navbar';
+import AnimatedSection from './components/AnimatedSection';
+import Info from './Website-content/Info/Info';
+import Projects from './Website-content/Projects/Projects';
+import Contact from './Website-content/Contact/Contact';
+
+
+
 
 function App() {
     return (
-        <HashRouter>
-            <div className="App">
-                <Navbar />
+        <div className="App">
 
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<AppAbout />} />
-                    <Route path="/skills" element={<Skills />} />
-                    <Route path="/info" element={<Info />} />
-                    <Route path="/projects" element={<Projects />} />
-                    <Route path="/contact" element={<Contact />} />
-                </Routes>
-            </div>
-        </HashRouter>
+            <Navbar />
+
+
+
+
+            <AnimatedSection id="info">
+                <Info />
+            </AnimatedSection>
+
+            <AnimatedSection id="projects">
+                <Projects />
+            </AnimatedSection>
+
+            <AnimatedSection id="contact">
+                <Contact />
+            </AnimatedSection>
+
+        </div>
     );
 }
 

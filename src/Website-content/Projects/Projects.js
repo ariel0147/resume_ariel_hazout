@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from "./Projects.module.css";
-import { FaHtml5, FaCss3, FaJs, FaNodeJs, FaTimes } from 'react-icons/fa';
+import { FaHtml5, FaCss3, FaJs, FaNodeJs, FaTimes ,FaReact} from 'react-icons/fa';
 import { SiArduino, SiCplusplus } from 'react-icons/si';
 import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
@@ -72,7 +72,7 @@ function Projects(props) {
             title: "ClearCoin",
             description: t('projects.p8_desc'),
             link: "https://github.com/ariel0147/ClearCoin",
-            techIcons: [<FaJs />, <FaHtml5 />, <FaCss3 />]
+            techIcons: [<FaReact />,<FaJs />, <FaHtml5 />, <FaCss3 />]
         }
 
     ];

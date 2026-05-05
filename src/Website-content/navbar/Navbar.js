@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll"; // שונה מ-react-router-dom ל-react-scroll
 import styles from "./Navbar.module.css";
 import { FaBars, FaTimes, FaGlobe } from "react-icons/fa";
 import { useTranslation } from 'react-i18next';
@@ -11,7 +11,6 @@ function Navbar() {
     const toggleMenu = () => setIsOpen(!isOpen);
     const closeMenu = () => setIsOpen(false);
 
-
     const changeLanguage = () => {
         const newLang = i18n.language === 'he' ? 'en' : 'he';
         i18n.changeLanguage(newLang);
@@ -21,9 +20,11 @@ function Navbar() {
     return (
         <nav className={styles.navbar}>
             <div className={styles.logo}>
-                <Link to="/" onClick={closeMenu}>Ariel Hazout</Link>
+                {/* שינוי גם ללוגו כדי שיגלול לתחילת הדף */}
+                <Link to="home" smooth={true} duration={600} style={{ cursor: 'pointer' }} onClick={closeMenu}>
+                    Ariel Hazout
+                </Link>
             </div>
-
 
             <button
                 onClick={changeLanguage}
@@ -51,12 +52,13 @@ function Navbar() {
             </div>
 
             <div className={`${styles.navLinks} ${isOpen ? styles.active : ''}`}>
-                <Link to="/" onClick={closeMenu}>{t('navbar.home')}</Link>
-                <Link to="/about" onClick={closeMenu}>{t('navbar.about')}</Link>
-                <Link to="/skills" onClick={closeMenu}>{t('navbar.skills')}</Link>
-                <Link to="/projects" onClick={closeMenu}>{t('navbar.projects')}</Link>
-                <Link to="/info" onClick={closeMenu}>{t('navbar.info')}</Link>
-                <Link to="/contact" onClick={closeMenu} className={styles.contactBtn}>{t('navbar.contact')}</Link>
+                {/* עדכון כל הקישורים לגלילה חלקה עם שמירת ניתובים ב-URL */}
+                <Link to="home" smooth={true} duration={600} spy={true} hashSpy={true} offset={-70} onClick={closeMenu} style={{ cursor: 'pointer' }}>{t('navbar.home')}</Link>
+                <Link to="about" smooth={true} duration={600} spy={true} hashSpy={true} offset={-70} onClick={closeMenu} style={{ cursor: 'pointer' }}>{t('navbar.about')}</Link>
+                <Link to="skills" smooth={true} duration={600} spy={true} hashSpy={true} offset={-70} onClick={closeMenu} style={{ cursor: 'pointer' }}>{t('navbar.skills')}</Link>
+                <Link to="projects" smooth={true} duration={600} spy={true} hashSpy={true} offset={-70} onClick={closeMenu} style={{ cursor: 'pointer' }}>{t('navbar.projects')}</Link>
+                <Link to="info" smooth={true} duration={600} spy={true} hashSpy={true} offset={-70} onClick={closeMenu} style={{ cursor: 'pointer' }}>{t('navbar.info')}</Link>
+                <Link to="contact" smooth={true} duration={600} spy={true} hashSpy={true} offset={-70} onClick={closeMenu} className={styles.contactBtn} style={{ cursor: 'pointer' }}>{t('navbar.contact')}</Link>
             </div>
         </nav>
     );
