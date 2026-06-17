@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from "./Projects.module.css";
-import { FaHtml5, FaCss3, FaJs, FaNodeJs, FaTimes ,FaReact} from 'react-icons/fa';
+// הוספנו כאן את FaGooglePlay
+import { FaHtml5, FaCss3, FaJs, FaNodeJs, FaTimes, FaReact, FaGooglePlay } from 'react-icons/fa';
 import { SiArduino, SiCplusplus } from 'react-icons/si';
 import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
@@ -58,7 +59,9 @@ function Projects(props) {
             description: t('projects.p6_desc'),
             link: "https://github.com/ariel0147/Bulk_game",
             liveLink: "https://ariel0147.github.io/Bulk_game/Bulk_game.html",
-            techIcons: [<FaJs />, <FaHtml5 />, <FaCss3 />]
+            // הוספנו את הקישור לגוגל פליי ואת האייקון של ריאקט
+            googlePlayLink: "https://play.google.com/store/apps/details?id=com.arielhazout.bulkgame",
+            techIcons: [<FaReact />, <FaJs />, <FaHtml5 />, <FaCss3 />]
         },
         {
             id: 7,
@@ -74,7 +77,6 @@ function Projects(props) {
             link: "https://github.com/ariel0147/ClearCoin",
             techIcons: [<FaReact />,<FaJs />, <FaHtml5 />, <FaCss3 />]
         }
-
     ];
 
     const openModal = (project) => {
@@ -131,6 +133,13 @@ function Projects(props) {
 
                             {project.liveLink && (
                                 <a href={project.liveLink} target="_blank" rel="noopener noreferrer">{t('projects.btn_play')}</a>
+                            )}
+
+                            {/* כפתור חדש לגוגל פליי */}
+                            {project.googlePlayLink && (
+                                <a href={project.googlePlayLink} target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+                                    <FaGooglePlay /> Google Play
+                                </a>
                             )}
                         </div>
                     </motion.div>
